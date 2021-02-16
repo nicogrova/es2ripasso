@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title> ripasso</title>
+
+</head>
+
+<body>
+    <h1>eseercizio 2</h1>
+    <h3>dato un numero individuare se è pari o dispari</h3>
+    <br>
+    <input type="number" id="numero">
+    <button id="btn">calcola</button>
+    <div id="div"></div>
+    <script>
+        document
+            .getElementById("btn")
+            .addEventListener("click", () => { division() })
+        var division = function () {
+            if (document.getElementById("numero").value % 2 == 0) {
+                document.getElementById("div").innerHTML ="è pari";
+            } else {
+                document.getElementById("div").innerHTML="è dispari";
+
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
